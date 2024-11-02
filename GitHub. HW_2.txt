@@ -1,0 +1,61 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+Создать дополнительный репозиторий на гитхабе и клонировать его на локал
+Предусловие. Нужно инициализировать мейн git init 
+PS: должен быть какой-то файл
+- Postman git branch postman
+- Jmeter git branch Jmeter
+- CheckLists git branch CheckLists
+- Bag Reports git branch BagReports
+- SQL git branch SQL
+- Charles git branch Charles
+- Mobile testing git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий => git push origin --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта => git checkout BagReports => 
+$ cat > BR_1.txt
+1. ID
+2. Title
+3. Severity
+4. Priority
+5. Creator
+6. Actual result
+7. Expected result
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add .
+git commit -m "br_1"
+git push --set-upstream origin BagReports
+git push
+5. Вмержить ветку Bag Reports в Main
+git checkout main
+git merge BagReports
+6. Запушить main на внешний репозиторий.
+git push
+7. В ветке CheckLists набросать структуру чек листа.
+$ git checkout CheckLists
+cat > ChL_1.txt
+$ cat > ChL_1.txt
+Тестируем электрический стул:
+
+- [] Включить напряжение к стулу. Стул не должен загореться
+- [] Положить амперметр на стул. Стул не должен проводить электричество в выключенном состоянии
+- [] Дергаю очень сильно за подлокотники. Подлокотники не должны оторваться
+- [] Дергаю очень сильно за каждый ремень. Ремни не должны оторваться
+- [] Толкаю стул. Стул не должен упасть
+- [] Сесть на стул. Стул не должен развалиться
+- [] Закрепить на себе все ремни. Я не должен выбраться
+- [] Посадить на стул худого, низкого человека и закрепить все ремни. Человек не должен выбраться
+- [] Посадить крупного, взрослого человека и закрепить все ремни. Стул не должен развалиться, человек не должен выбраться
+8. Запушить структуру на внешний репозиторий
+git add .
+git commit -m "br_1"
+git push --set-upstream origin CheckLists
+git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Click [Compare & pull request]
+10. Синхронизировать Внешнюю и Локальную ветки Main
+$ git push
+$ git fetch
+$ git pull
+

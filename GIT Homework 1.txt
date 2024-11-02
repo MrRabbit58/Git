@@ -1,0 +1,78 @@
+GIT Homework 1
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON. - Создаём на гите
+ 5. Клонировать репозиторий JSON на локальный компьютер. - git clone "ссылка https"
+ 6. Внутри локального JSON создать файл “new.json”. - cd "папка". touch new.json
+ 7. Добавить файл под гит. - git add .
+ 8. Закоммитить файл. - git commit -m "название"
+ 9. Отправить файл на внешний GitHub репозиторий. git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. 
+ cat > new.json
+ {
+        "Full name": "Zyryanov Konstantin",
+        "Age": 27,
+        "Pets": 2,
+        "Desired salary": "620$"
+}
+
+ 11. Отправить изменения на внешний репозиторий. - git commit -m "json"; git push
+ 12. Создать файл preferences.json - mkdir preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. vim preferences.json
+ {
+        "Favorite movie": "Resident evil",
+        "Favorite TV series": "Strain",
+        "Favorite food": "Vietnamese cuisine",
+        "Favorite time of the year": "The beginning of summer",
+        "The county you would like to visit": "Japan"
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON - описать скиллы
+ 15. Отправить сразу 2 файла на внешний репозиторий. 
+	git add .
+	git status
+	git commit -m "preferences"
+	git push
+ 16. На веб интерфейсе создать файл bug_report.json. - через Add file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. клик по кнопке 
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. Выбрать файл bug_report.json. => edit file.. 
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. => клик по кнопке commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON - git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML. - создаём на гите
+ 22. Клонировать репозиторий XML на локальный компьютер. - git clone "ссылка https"
+ 23. Внутри локального XML создать файл “new.xml”. - touch new.xml
+ 24. Добавить файл под гит. - git add new.xml
+ 25. Закоммитить файл. - git commit -m "название"
+ 26. Отправить файл на внешний GitHub репозиторий. - git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. - 
+ <?xml version="1.0"?>
+<data>
+	<fullname>Zyryanov_Konstantin</fullname>
+	<age>27</age>
+	<numberpets>2</numberpets>
+	<salary>620$</salary>
+</data>
+ 28. Отправить изменения на внешний репозиторий. - git commit -m "xml"; git push
+ 29. Создать файл preferences.xml - touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ <?xml version="1.0"?>	
+<data2>
+	<film>Resident Evil</film>
+	<tvseries>The Dark</tvseries>
+	<food>pancakes</food>
+	<season>summer</season>
+	<country>Japan</country>
+</data2>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML - vim skill.xml 
+  <?xml version="1.0"?>	
+  <text>какой-то текст</text>
+ 32. Сделать коммит в одну строку. - git commit -m "files"
+ 33. Отправить сразу 2 файла на внешний репозиторий. - git push
+ 34. На веб интерфейсе создать файл bug_report.xml. - - через Add file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - клик по кнопке 
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. - Выбрать файл bug_report.json. => edit file.. 
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. - => клик по кнопке commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML - git pull
